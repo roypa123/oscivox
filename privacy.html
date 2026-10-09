@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Privacy Policy for Oscivox: Frequency Generator, an Android tone generator app." />
+  <meta name="color-scheme" content="dark light" />
+  <title>Privacy Policy — Oscivox</title>
+  <style>
+    :root {
+      --bg: #04050d;
+      --card: #0b0e22;
+      --ink: #eef1ff;
+      --ink-2: #b9c2e6;
+      --ink-3: #8691bd;
+      --line: rgba(255, 255, 255, .09);
+      --cyan: #2ee6ff;
+      --blue: #4f7dff;
+      --violet: #9b6bff;
+      --warn-bg: rgba(255, 211, 138, .12);
+      --warn-ink: #ffd38a;
+      --grad: linear-gradient(120deg, var(--cyan), var(--blue) 55%, var(--violet));
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #f5f7ff;
+        --card: #ffffff;
+        --ink: #11152e;
+        --ink-2: #3b4468;
+        --ink-3: #66709a;
+        --line: rgba(17, 21, 46, .12);
+        --cyan: #0891b2;
+        --blue: #3358e0;
+        --violet: #7c4dff;
+        --warn-bg: #fff4dc;
+        --warn-ink: #8a5a00;
+      }
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background:
+        radial-gradient(900px 420px at 0% -10%, rgba(46, 230, 255, .12), transparent 60%),
+        radial-gradient(800px 420px at 100% -5%, rgba(155, 107, 255, .14), transparent 60%),
+        var(--bg);
+      background-repeat: no-repeat;
+      color: var(--ink);
+      font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .wrap { max-width: 760px; margin: 0 auto; padding: 0 20px; }
+
+    header.hero { padding: 56px 0 28px; }
+    .brand { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; color: var(--ink); }
+    .brand svg { width: 34px; height: 34px; }
+    .brand span { font-weight: 600; font-size: 20px; letter-spacing: -.02em; }
+    .brand b {
+      font-weight: 600;
+      background: var(--grad);
+      -webkit-background-clip: text; background-clip: text; color: transparent;
+    }
+    h1 {
+      margin: 28px 0 8px;
+      font-size: clamp(30px, 6vw, 44px);
+      line-height: 1.1;
+      letter-spacing: -.03em;
+      font-weight: 650;
+    }
+    .meta { margin: 0; color: var(--ink-3); font-size: 14px; }
+    .meta strong { color: var(--ink-2); font-weight: 600; }
+
+    .summary {
+      margin: 28px 0 0;
+      padding: 18px 20px;
+      border-radius: 18px;
+      background: var(--card);
+      border: 1px solid var(--line);
+      box-shadow: 0 0 0 1px transparent, 0 18px 50px -30px rgba(46, 230, 255, .35);
+    }
+    .summary h2 { margin: 0 0 8px; font-size: 14px; letter-spacing: .12em; text-transform: uppercase; color: var(--cyan); }
+    .summary ul { margin: 0; padding-left: 20px; color: var(--ink-2); }
+    .summary li { margin: 4px 0; }
+
+    nav.toc { margin: 28px 0 0; }
+    nav.toc summary { cursor: pointer; color: var(--ink-2); font-weight: 600; padding: 6px 0; }
+    nav.toc ol { margin: 8px 0 0; padding-left: 22px; columns: 2; column-gap: 28px; }
+    nav.toc li { margin: 3px 0; break-inside: avoid; }
+    nav.toc a { color: var(--ink-2); text-decoration: none; }
+    nav.toc a:hover { color: var(--cyan); text-decoration: underline; }
+
+    main { padding: 12px 0 64px; }
+    section { margin-top: 36px; scroll-margin-top: 20px; }
+    h2.sec {
+      display: flex; align-items: baseline; gap: 12px;
+      margin: 0 0 10px;
+      font-size: 22px; line-height: 1.25; letter-spacing: -.015em;
+    }
+    h2.sec .num {
+      flex: none;
+      font-size: 13px; font-weight: 600; letter-spacing: .08em;
+      background: var(--grad);
+      -webkit-background-clip: text; background-clip: text; color: transparent;
+    }
+    p { margin: 10px 0; color: var(--ink-2); }
+    ul.list { margin: 10px 0; padding-left: 22px; color: var(--ink-2); }
+    ul.list li { margin: 6px 0; }
+    a { color: var(--cyan); text-underline-offset: 3px; }
+    a:hover { color: var(--blue); }
+    strong { color: var(--ink); }
+
+    /* Highlighted fields the developer must replace before publishing */
+    .fill {
+      padding: 1px 6px;
+      border-radius: 6px;
+      background: var(--warn-bg);
+      color: var(--warn-ink);
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    .notice {
+      margin: 14px 0;
+      padding: 14px 16px;
+      border-radius: 14px;
+      border: 1px solid var(--line);
+      border-left: 3px solid var(--violet);
+      background: var(--card);
+      color: var(--ink-2);
+    }
+
+    footer {
+      padding: 28px 0 48px;
+      border-top: 1px solid var(--line);
+      color: var(--ink-3);
+      font-size: 14px;
+    }
+
+    @media (max-width: 560px) {
+      header.hero { padding-top: 36px; }
+      nav.toc ol { columns: 1; }
+      .fill { white-space: normal; }
+    }
+    @media print {
+      body { background: #fff; color: #000; }
+      :root { --ink: #000; --ink-2: #222; --ink-3: #444; --card: #fff; --line: #ccc; }
+      nav.toc { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="wrap">
+  <header class="hero">
+    <a class="brand" href="#top" aria-label="Oscivox">
+      <svg viewBox="0 0 48 48" aria-hidden="true">
+        <defs>
+          <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#2ee6ff" />
+            <stop offset=".5" stop-color="#4f7dff" />
+            <stop offset="1" stop-color="#9b6bff" />
+          </linearGradient>
+        </defs>
+        <circle cx="24" cy="24" r="21" fill="none" stroke="url(#g)" stroke-width="1.6" opacity=".55" />
+        <path d="M9 24c3.5 0 4-10 7.5-10s4 20 7.5 20 4-20 7.5-20 4 10 7.5 10" fill="none" stroke="url(#g)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+      <span>Osci<b>vox</b></span>
+    </a>
+
+    <h1 id="top">Privacy Policy</h1>
+    <p class="meta">
+      <strong>Oscivox: Frequency Generator</strong> · Effective date: <strong>9 October 2026</strong>
+    </p>
+
+    <div class="summary" role="note" aria-label="Summary">
+      <h2>In short</h2>
+      <ul>
+        <li>No account, no sign-up, and we don't collect your personal information.</li>
+        <li>No microphone, camera, contacts or location access.</li>
+        <li>The app shows ads, and the ad network may collect device information (section 3).</li>
+        <li>Fonts are downloaded from Google Fonts on first launch.</li>
+      </ul>
+    </div>
+
+    <nav class="toc" aria-label="Contents">
+      <details>
+        <summary>Contents</summary>
+        <ol>
+          <li><a href="#s1">Information we collect</a></li>
+          <li><a href="#s2">How the app uses your device</a></li>
+          <li><a href="#s3">Advertising</a></li>
+          <li><a href="#s4">Data sharing</a></li>
+          <li><a href="#s5">Retention and deletion</a></li>
+          <li><a href="#s6">Children's privacy</a></li>
+          <li><a href="#s7">Security</a></li>
+          <li><a href="#s8">Hearing safety notice</a></li>
+          <li><a href="#s9">Changes to this policy</a></li>
+          <li><a href="#s10">Contact</a></li>
+        </ol>
+      </details>
+    </nav>
+  </header>
+
+  <main>
+    <p>
+      This policy explains how the Oscivox app ("the app") handles information.
+      The app is operated by ROY P A.
+      We keep this policy short because the app collects very little.
+    </p>
+
+    <section id="s1">
+      <h2 class="sec"><span class="num">01</span> Information we collect</h2>
+      <p>
+        Oscivox does not ask you to create an account, and we do not collect, store or share your name,
+        email address, location, contacts, photos, microphone recordings or any other personal information.
+        The app does not use your microphone, camera, contacts or location.
+      </p>
+      <p>
+        Your settings (such as the frequency, volume and waveform you choose) are used only while the app is
+        open and are not sent anywhere.
+      </p>
+    </section>
+
+    <section id="s2">
+      <h2 class="sec"><span class="num">02</span> How the app uses your device</h2>
+      <ul class="list">
+        <li><strong>Audio:</strong> the app generates tones and plays them through your device's speaker or headphones. Nothing is recorded.</li>
+        <li>
+          <strong>Internet:</strong> the app requests internet access to download its typefaces from Google Fonts the
+          first time it runs, and to load advertisements (see section 3). When your device downloads a font, Google
+          receives standard connection information such as your IP address, as with any web request. Google's handling
+          of that information is described in its
+          <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">privacy policy</a>.
+        </li>
+      </ul>
+    </section>
+
+    <section id="s3">
+      <h2 class="sec"><span class="num">03</span> Advertising</h2>
+      <p>
+        Oscivox is free and shows banner advertisements provided by
+        Google AdMob. Ad networks may collect and use certain information
+        from your device to show ads and measure their performance. This can include your advertising ID, IP address,
+        device and app information, and approximate location derived from your IP address. We do not control this
+        collection. It is governed by the ad network's own policies:
+      </p>
+      <ul class="list">
+        <li>
+          Google AdMob:
+          <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">policies.google.com/technologies/ads</a>
+        </li>
+      </ul>
+    
+    </section>
+
+    <section id="s4">
+      <h2 class="sec"><span class="num">04</span> Data sharing</h2>
+      <p>
+        We do not sell your personal information. The only parties that receive any data are the third-party services
+        named above (Google Fonts and the ad network), and only as described in this policy.
+      </p>
+    </section>
+
+    <section id="s5">
+      <h2 class="sec"><span class="num">05</span> Data retention and deletion</h2>
+      <p>
+        Because the app does not collect personal information, we hold no personal data about you to delete.
+        Uninstalling the app removes everything it stored on your device.
+      </p>
+    </section>
+
+    <section id="s6">
+      <h2 class="sec"><span class="num">06</span> Children's privacy</h2>
+      <p>
+        Oscivox is not directed at children under 13, and we do not knowingly collect personal information from
+        children. If you believe a child has provided personal information, contact us at the address below and we
+        will help.
+      </p>
+    </section>
+
+    <section id="s7">
+      <h2 class="sec"><span class="num">07</span> Security</h2>
+      <p>
+        The app does not transmit personal data, so there is none for us to protect. Network requests made by the app
+        and its ad network use secure connections where available.
+      </p>
+    </section>
+
+    <section id="s8">
+      <h2 class="sec"><span class="num">08</span> Hearing safety notice</h2>
+      <div class="notice">
+        Oscivox plays pure tones, which can be unpleasant or harmful at high volume. Start with a low volume,
+        increase it slowly, and stop if anything sounds painful. The app is a sound and educational tool and is not
+        a medical device.
+      </div>
+    </section>
+
+    <section id="s9">
+      <h2 class="sec"><span class="num">09</span> Changes to this policy</h2>
+      <p>
+        We may update this policy from time to time. Continued use of the
+        app after a change means you accept the updated policy.
+      </p>
+    </section>
+
+    <section id="s10">
+      <h2 class="sec"><span class="num">10</span> Contact</h2>
+      <p>
+        Questions about this policy? Email
+        <a href="mailto:roypamechbc@gmail.com">roypamechbc@gmail.com</a>.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 ROY P A. Oscivox is a tone generator for sound and
+    educational use.
+  </footer>
+</div>
+
+</body>
+</html>
